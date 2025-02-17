@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #091833, #12264d); 
+  color: #ffffff;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+  background-color: #1e293b;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 255, 170, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #00ffc3;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ff99;
+  transform: scale(1.1);
+}
+
+/* الصفحة الرئيسية */
+.homepage {
+  text-align: center; 
+  padding: 100px 20px;
+}
+
+section {
+  padding: 60px 20px;
+  margin-top: 80px;
+  direction: rtl;
+  text-align: center; 
+}
+
+button:hover {
+  background-color: #00ff99;
+  transform: scale(1.05);
+}
+h2 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00ffc3;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
+  text-align: center; 
+}
+
+section:before {
+  content: url('https://img.icons8.com/ios/50/00ff99/security-lock.png');
+  display: block;
+  margin: 0px auto;
+  width: 0px;
+  height: 0px;
+  filter: drop-shadow(0 0 5px #00ff99);
+}
+/* expert*/
+.testimonial {
+  background-color: rgba(30, 41, 59, 0.8);
+  color: white;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 700px;
+  box-shadow: 0 5px 15px rgba(0, 255, 170, 0.2);
+  text-align: right; 
+}
+
+.faq-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.faq-item {
+  margin: 20px 0;
+  border: 2px solid #1e293b;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #091833;
+}
+
+.faq-item input[type="checkbox"] {
+  display: none;
+}
+
+.faq-item label {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #00ffc3;
+  cursor: pointer;
+  display: block;
+  padding: 10px 0;
+  text-align: right;
+  background-color: #1e293b;
+  border-radius: 8px;
+  margin: 0;
+  transition: background-color 0.3s;
+}
+
+.faq-item label:hover {
+  background-color: #00ffc3;
+  color: #091833;
+}
+
+.faq-item p,
+.faq-item ul {
+  display: none;
+  font-size: 1.1em;
+  color: #fff;
+  text-align: right;
+}
+
+.faq-item input[type="checkbox"]:checked + label + p,
+.faq-item input[type="checkbox"]:checked + label + ul {
+  display: block;
+}
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #faf7f7;
+}
+
+#library-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color:#1e293b(27, 15, 69);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#library-content h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#library-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #fcfbfb;
+  text-align: center;
+}
+
+.book-list {
+  margin-top: 30px;
+}
+
+.book-list h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.book {
+  background-color:#12264d;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book h3 {
+  font-size: 1.4em;
+  color: #fbfafa;
+  margin-bottom: 10px;
+}
+
+.book p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.book-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.book-list li {
+  width: 100%;
+  max-width: 450px;
+  flex-grow: 1;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #fbf6f6;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #4CAF50;
+}
+
+footer {
+  background-color: #1e293b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 -4px 10px rgba(0, 255, 170, 0.3);
+}
+
+.testimonial h3 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #00ff99;
+}
+
+a {
+  background-color: #1e293b;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1.2em;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
+  margin: 10px;
+}
+
+a:hover {
+  background-color: #00ffc3;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 170, 1);
+}
+
+footer {
+  background-color: #1e293b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 -4px 10px rgba(0, 255, 170, 0.3);
+}
